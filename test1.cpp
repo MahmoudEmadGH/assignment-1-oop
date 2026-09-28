@@ -74,95 +74,6 @@ void frame(Image photo){
             }
         }
 
-
-//        float separateWidthP=photo.width*(0.01);
-//        int separateWidth=(int)separateWidthP;
-       
-//        for(int i=0;i<photo.width;i++){
-//         if(i%(separateWidth*2)<separateWidth){ 
-//             for(int j=0;j<percent;j++){
-
-//             for(int k=0;k<3;k++){
-//                 if(k==0) photo(i,j,k)=92;   //92
-//                 if(k==1) photo(i,j,k)=64;    //64
-//                 if(k==2) photo(i,j,k)=45;     //45
-
-//               }
-//           }
-//        }
-//         else{
-//             for(int j=0;j<percent;j++){
-//             for(int k=0;k<3;k++){
-//                 if(k==0) photo(i,j,k)=212;
-//                 if(k==1) photo(i,j,k)=175;
-//                 if(k==2) photo(i,j,k)=55;
-//               }
-//           }
-//         }
-//        }  
-//        for(int i=0;i<photo.width;i++){
-//         if((i%(separateWidth*2)<separateWidth)){         
-//             for(int j=photo.height-percent;j<photo.height;j++){
-//             for(int k=0;k<3;k++){
-//                 if(k==0) photo(i,j,k)=92;
-//                 if(k==1) photo(i,j,k)=64;
-//                 if(k==2) photo(i,j,k)=45;
-
-//               }
-//           }
-//         }
-//         else{
-//             for(int j=photo.height-percent;j<photo.height;j++){
-//             for(int k=0;k<3;k++){
-//                 if(k==0) photo(i,j,k)=212;
-//                 if(k==1) photo(i,j,k)=175;
-//                 if(k==2) photo(i,j,k)=55;
-//               }
-//           }
-//         }
-//        } 
-
-//        for(int i=0;i<percent;i++){
-//             for(int j=percent;j<photo.height-percent;j++){
-//                 if((j%(separateWidth*2)<separateWidth)){
-//                 for(int k=0;k<3;k++){
-//                 if(k==0) photo(i,j,k)=92;
-//                 if(k==1) photo(i,j,k)=64;
-//                 if(k==2) photo(i,j,k)=45;
-//                }
-//             }
-//             else{
-//                 for(int k=0;k<3;k++){
-//                 if(k==0) photo(i,j,k)=212;
-//                 if(k==1) photo(i,j,k)=175;
-//                 if(k==2) photo(i,j,k)=55;
-//               }
-//             }
-                
-//            }
-//         }
-//         for(int i=photo.width-percent;i<photo.width;i++){
-//             for(int j=percent;j<photo.height-percent;j++){
-//                 if((j%(separateWidth*2)<separateWidth)){
-//                 for(int k=0;k<3;k++){
-//                 if(k==0) photo(i,j,k)=92;
-//                 if(k==1) photo(i,j,k)=64;
-//                 if(k==2) photo(i,j,k)=45;
-//                }
-//             }
-//             else{
-//                 for(int k=0;k<3;k++){
-//                 if(k==0) photo(i,j,k)=212;
-//                 if(k==1) photo(i,j,k)=175;
-//                 if(k==2) photo(i,j,k)=55;
-//               }
-//             }
-                
-//            }
-           
-//         }
-    
-// }
     photo.saveImage("new photo.jpg");
     cout<<"here you are!";
 }
@@ -210,4 +121,5 @@ int main(){
      }
      else{cout<<"pls choose a correct filter: "<<endl;}
     } 
+    cout<<"hoa fe ksm eeeeh";
 }
