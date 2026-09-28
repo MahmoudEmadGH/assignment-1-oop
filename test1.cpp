@@ -121,5 +121,4 @@ int main(){
      }
      else{cout<<"pls choose a correct filter: "<<endl;}
     } 
-    cout<<"hoa fe ksm eeeeh";
 }
