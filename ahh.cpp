@@ -3,8 +3,8 @@
 using namespace std;
 string n;
 Image pic;
-void infrared(Image &photo);
-void frame(Image &photo);
+void infrared(Image &photo);  
+void frame(Image &photo);     
 void menu();
 void save_Image();
 void load_Image();
@@ -45,47 +45,47 @@ void save_Image(){
         pic.saveImage(newImage);
         cout<<"here you are!"<<endl;
     }
-    //menu();
+    
 
 }
- void menu(){
-    string option;
+//  void menu(){
+//     string option;
     
-    cout<<"please choose the option number:"<<endl;
-    cout<<"1)load a new image"<<endl;
-    cout<<"2)choose a filter"<<endl;
-    cout<<"3)save the image"<<endl;
-    cout<<"4)exit"<<endl;
-    cin>>option;
-    if(option=="1"){load_Image();}
-    else if(option=="2"){
-        cout<<"please choose the filter number"<<endl;
-        cout<<"1)infrared - 2)add frame - 3)invert image - 4)darken and lighten - 5)grey scale - 6)black and white - 7)flip image - 8)rotate image"<<endl;
-        string filterOption;
-        //cin>>filterOption;
-        while(1){
-     cin>>filterOption;
-     if(filterOption=="1"){
-         infrared(pic);break;
-     }
-     else if(filterOption=="2"){
-        frame(pic);break;
-     }
-     else{cout<<"please choose a correct filter number: "<<endl;}
-    } 
+//     cout<<"please choose the option number:"<<endl;
+//     cout<<"1)load a new image"<<endl;
+//     cout<<"2)choose a filter"<<endl;
+//     cout<<"3)save the image"<<endl;
+//     cout<<"4)exit"<<endl;
+//     cin>>option;
+//     if(option=="1"){load_Image();}
+//     else if(option=="2"){
+//         cout<<"please choose the filter number"<<endl;
+//         cout<<"1)infrared - 2)add frame - 3)invert image - 4)darken and lighten - 5)grey scale - 6)black and white - 7)flip image - 8)rotate image"<<endl;
+//         string filterOption;
+//         //cin>>filterOption;
+//         while(1){
+//      cin>>filterOption;
+//      if(filterOption=="1"){
+//          infrared(pic);break;
+//      }
+//      else if(filterOption=="2"){
+//         frame(pic);break;
+//      }
+//      else{cout<<"please choose a correct filter number: "<<endl;}
+//     } 
 
-    }
-    else if(option=="3"){
-        save_Image();
-    }
-     else if(option=="4"){
-          //menu();
-          return;
-    }
+//     }
+//     else if(option=="3"){
+//         save_Image();
+//     }
+//      else if(option=="4"){
+//           //menu();
+//           return;
+//     }
      
     
-}
-void frame(Image &photo){
+// }
+void frame(Image &photo){    
     cout<<"choose a frame: "<<endl;
     cout<<"1)simple - 2)mixed"<<endl<<"please enter the frame number:"<<endl;
      double percent=2.0/100;
@@ -108,7 +108,7 @@ void frame(Image &photo){
     //save_Image();
     // photo.saveImage("new photo.jpg");
     // cout<<"here you are!";
-     menu();
+     //menu();                      //55555555
     break;
 
     }
@@ -160,7 +160,7 @@ void frame(Image &photo){
                 }
             }
         }
-         menu();
+        // menu();             //555555
     //save_Image();
     // photo.saveImage("new photo.jpg");
     // cout<<"here you are!";
@@ -169,7 +169,7 @@ void frame(Image &photo){
 else{cout<<"please enter a correct frame number: "<<endl;}
     }
 }
-void infrared(Image &photo){
+void infrared(Image &photo){    
     for(int i=0;i<photo.width;i++){
         for(int j=0;j<photo.height;j++){
             float avg=0;
@@ -188,7 +188,7 @@ void infrared(Image &photo){
     }
 
    // save_Image();
-     menu();
+     //menu();          555555
     // photo.saveImage("new photo.jpg");
     // cout<<"here you are!"<<endl;
 }
@@ -216,7 +216,7 @@ int main(){
      cout << "please enter a correct name: " << endl;
  }
  }  
- //load_Image();
+ 
  string option;
     while(1){
     cout<<"please choose the option number:"<<endl;
@@ -249,7 +249,6 @@ int main(){
     else if(option=="4"){ return 0;}
     else{cout<<"please select a correct option";}
 }
-   // menu();
 } 
     
 
