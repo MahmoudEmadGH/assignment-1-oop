@@ -3,11 +3,12 @@
 using namespace std;
 void frame(Image photo){
     cout<<"choose a frame: "<<endl;
-    cout<<"1)simple - 2)mixed"<<endl;
-    int f ;cin>>f;
+    cout<<"1)simple - 2)mixed"<<endl<<"please enter the frame number:"<<endl;
      double percent=2.0/100;
     percent*=photo.width;
-    
+    int f ;
+    while(1){
+    cin>>f;
     if(f==1){
         for(int i=0;i<photo.width;i++){
             for(int j=0;j<photo.height;j++){
@@ -23,6 +24,7 @@ void frame(Image photo){
    
     photo.saveImage("new photo.jpg");
     cout<<"here you are!";
+    break;
 
     }
     else if(f==2){
@@ -76,7 +78,10 @@ void frame(Image photo){
 
     photo.saveImage("new photo.jpg");
     cout<<"here you are!";
+    break;
 }
+else{cout<<"please enter a correct frame number: "<<endl;}
+    }
 }
 void infrared(Image photo){
     for(int i=0;i<photo.width;i++){
@@ -117,12 +122,12 @@ int main(){
      }
  }
  catch (const invalid_argument& e) {
-     cout << "pls enter a correct name: " << endl;
+     cout << "please enter a correct name: " << endl;
  }
  }  
 
-    cout<<"wich filter do you want? "<<endl;
-    cout<<"1)add frame - 2)infrared - 3)resize "<<endl;
+    cout<<"which filter do you want? "<<endl;
+    cout<<"1)add frame - 2)infrared  "<<endl<<"please enter the filter number: "<<endl;
      int numFilter;
      
      while(1){
@@ -133,6 +138,6 @@ int main(){
      else if(numFilter==2){
         infrared(pic);break;
      }
-     else{cout<<"pls choose a correct filter: "<<endl;}
+     else{cout<<"please choose a correct filter number: "<<endl;}
     } 
 }
